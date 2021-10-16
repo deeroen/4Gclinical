@@ -4,7 +4,7 @@ This is an application providing a solution to the test provided by 4G clinical.
 This app involves a minimal frontend. The app was developed using Flask, and the 
 documentation was tested using doctest.
 
-### A typical top-level directory layout
+### Directory layout
 
     .
     ├── app.py                  # The Flask app
