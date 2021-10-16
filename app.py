@@ -5,24 +5,28 @@ from doctest import testmod
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     phone_number = request.args.get("phone_number", "").replace('"', "")
     word_list = request.args.get("word_list", "")
     if phone_number and word_list:
-        output = str(solver(phone_number, sanatise_array(word_list), keypad))
+        try:
+            output = str(solver(phone_number, sanatise_array(word_list), keypad))
+        except ValueError:
+            output = "Oops!  That was no valid phone number.  Try again..."
     else:
         output = "[]"
     return (
-        """<form action="" method="get">
-                Phone number "3662277": <input type="text" name="phone_number">
-                <br>
-                <br>
-                Array of words eg. ["foo", "bar", "baz"]: <input type="text" name="word_list">
-                <input type="submit" value="Submit">
-            </form>"""
-        + "Output: "
-        + output
+            """<form action="" method="get">
+                    Phone number "3662277": <input type="text" name="phone_number">
+                    <br>
+                    <br>
+                    Array of words eg. ["foo", "bar", "baz"]: <input type="text" name="word_list">
+                    <input type="submit" value="Submit">
+                </form>"""
+            + "Output: "
+            + output
     )
 
 

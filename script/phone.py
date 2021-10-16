@@ -9,8 +9,7 @@ class PhoneNumber:
         :return: eg. "345"
         """
         if not self.number.isnumeric():
-            print("Oops!  That was no valid phone number.  Try again...")
-
+            raise(ValueError)
         return set(self.number)
 
     def get_digits(self):
