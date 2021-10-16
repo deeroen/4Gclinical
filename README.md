@@ -34,11 +34,11 @@ a method used to assess the validity of the phone number
 
 ## Use the app
 
-The app will then be running on [http://localhost:8080/](http://localhost:8080/)
+The app will then be running on [http://localhost:80/](http://localhost:8080/)
 
 
 ## Deploy with Docker
 
     docker build -t python-4gc .
 
-    docker run python-4gc
+    docker run  -p 80:80 python-4gc

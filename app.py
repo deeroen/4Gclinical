@@ -33,4 +33,4 @@ def index():
 if __name__ == "__main__":
     # This line is meant for doctest, set verbose to true to see the result of the test
     testmod(verbose=False)
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)
