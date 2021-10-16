@@ -11,7 +11,8 @@ documentation was tested using doctest.
     ├── requirements.txt        # Packages used
     ├── scipt                   # Classe(s) and useful functions
         └── phone.py            
-        └── solver.py           
+        └── solver.py  
+    ├── Dockerfile     
     └── README.md
 
 A flask application is contained within the `app.py` file.
