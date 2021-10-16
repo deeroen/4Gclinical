@@ -1,6 +1,6 @@
 # Challenge 4G clinical
 
-This is an application providing a solution to the test provided by 4G clinical.
+This is a python (>3.8) application providing a solution to the test provided by 4G clinical.
 This app involves a minimal frontend. The app was developed using Flask, and the 
 documentation was tested using doctest.
 
