@@ -9,7 +9,7 @@ documentation was tested using doctest.
     .
     ├── app.py                  # The Flask app
     ├── requirements.txt        # Packages used
-    ├── scipt                   # Classe(s) and usefull functions
+    ├── scipt                   # Classe(s) and useful functions
         └── phone.py            
         └── solver.py           
     └── README.md
