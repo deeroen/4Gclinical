@@ -1,6 +1,4 @@
-# import testmod for testing our function
-from doctest import testmod
-from phone import PhoneNumber
+from script.phone import PhoneNumber
 
 keypad = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
 
@@ -80,13 +78,3 @@ def solver(phone_number, word_list, keypad_dict):
     phone_number = PhoneNumber(phone_number)
     letters = get_letters(phone_number.get_digits(), keypad_dict)
     return check_correspondence(word_list, letters)
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    # This line is meant for doctest, set verbose to true to see the result of the test
-    testmod(verbose=False)
-    phone_number = input('Phone_number (eg. "3662277"):').replace('"', "")
-    word_list = input('List of words (eg. ["foo", "bar", "baz"]):')
-    word_list = sanatise_array(word_list)
-    print(solver(phone_number=phone_number, word_list=word_list, keypad_dict=keypad))

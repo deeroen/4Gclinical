@@ -10,7 +10,7 @@ class PhoneNumber:
         """
         if not self.number.isnumeric():
             print("Oops!  That was no valid phone number.  Try again...")
-            exit(-1)
+
         return set(self.number)
 
     def get_digits(self):
