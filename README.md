@@ -33,4 +33,11 @@ a method used to assess the validity of the phone number
 
 ## Use the app
 
-The app will then be running on [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+The app will then be running on [http://localhost:8080/](http://localhost:8080/)
+
+
+## Deploy with Docker
+
+    docker build -t python-4gc .
+
+    docker run python-4gc
