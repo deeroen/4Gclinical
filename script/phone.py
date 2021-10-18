@@ -6,7 +6,7 @@ class PhoneNumber:
     def create_digits(self):
         """
         Remove duplicates digits and returns a set of digits if valid phone number
-        :return: eg. "345"
+        :return: eg. {"3","4","5"}
         """
         if not self.number.isnumeric():
             raise(ValueError)
